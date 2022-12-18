@@ -144,34 +144,34 @@
       <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column nav-compact" data-widget="treeview" role="menu" data-accordion="false">
-          <li class="nav-header">{{ __('DASHBOARD') }}</li>
+          <li class="nav-header">{{ __('LEAGUE') }}</li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="{{ route('schedule', app()->getLocale()) }}" class="nav-link">
               <p>{{ __('Schedule') }}</p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="{{ route('standings', app()->getLocale()) }}" class="nav-link">
               <p>{{ __('Standings') }}</p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="{{ route('statistics', app()->getLocale()) }}" class="nav-link">
               <p>{{ __('Statistics') }}</p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="{{ route('players', app()->getLocale()) }}" class="nav-link">
               <p>{{ __('Players') }}</p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="{{ route('teams', app()->getLocale()) }}" class="nav-link">
               <p>{{ __('Teams') }}</p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="{{ route('transfers', app()->getLocale()) }}" class="nav-link">
               <p>{{ __('Transfers') }}</p>
             </a>
           </li>

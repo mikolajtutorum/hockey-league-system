@@ -35,4 +35,8 @@ return [
         'token' => env('TWILIO_TOKEN'),
         'number' => env('TWILIO_FROM'),
     ],
+
+    'discord' => [
+        'token' => env('DISCORD_API_TOKEN'),
+    ],
 ];

@@ -24,9 +24,9 @@
 
 <div class="card">
 <div class="card-body login-card-body">
-<form action="../../index3.html" method="post">
+<form action="{{ route('login', app()->getLocale()) }}" method="post">
 <div class="input-group mb-3">
-<input type="text" class="form-control" placeholder="Username">
+<input id="username" name="username" type="text" class="form-control" placeholder="Username">
 <div class="input-group-append">
 <div class="input-group-text">
 <span class="fas fa-user"></span>
@@ -34,7 +34,7 @@
 </div>
 </div>
 <div class="input-group mb-3">
-<input type="password" class="form-control" placeholder="Password">
+<input id="password" name="password" type="password" class="form-control" placeholder="Password">
 <div class="input-group-append">
 <div class="input-group-text">
 <span class="fas fa-lock"></span>

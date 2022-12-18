@@ -9,7 +9,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Dashboard</h1>
+            <h1 class="m-0">Transfers</h1>
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -19,25 +19,9 @@
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
-      <div class="row">
-<div class="col-lg-6">
-<div class="card">
-<div class="card-header border-0">
-<div class="d-flex justify-content-between">
-<h3 class="card-title">Standings</h3>
-<a href="#">Full Standings</a>
-</div>
-</div>
-<div class="card-body">
-<div class="d-flex">
-data here
-</div>
+        
+      transfers here
 
-</div>
-</div>
-
-
-</div>
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->

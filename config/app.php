@@ -196,6 +196,7 @@ return [
         Mariuzzo\LaravelJsLocalization\LaravelJsLocalizationServiceProvider::class,
         \Torann\GeoIP\GeoIPServiceProvider::class,
         danielme85\Geoip2\Geoip2ServiceProvider::class,
+        NotificationChannels\Discord\DiscordServiceProvider::class,
 
         /*
          * Application Service Providers...

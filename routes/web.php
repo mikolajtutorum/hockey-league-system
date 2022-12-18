@@ -32,10 +32,41 @@ Route::group([
         return view('welcome');
     });
 
+    Route::get('/404', function () {
+        return view('error404');
+    });
+
     // Generates user authentiction routes.
     Auth::routes();
 
     Route::get('/home', 'HomeController@index')->name('home');
+
+    Route::get('/teams', 'TeamsController@index')->name('teams');
+    Route::get('/team/{teamid}', 'TeamsController@teamprofile')->name('teamprofile');
+    Route::get('/teamprofile', function () {
+        return redirect(app()->getlocale());
+    });
+
+    Route::get('/players', 'PlayersController@index')->name('players');
+    Route::get('/player/{playerid}', 'PlayersController@playerprofile')->name('playerprofile');
+    Route::get('/playerprofile', function () {
+        return redirect(app()->getlocale());
+    });
+
+    Route::get('/schedule', 'ScheduleController@index')->name('schedule');
+    Route::get('/fixture/{fixtureid}', 'ScheduleController@fixturedetails')->name('fixture');
+    Route::get('/fixture', function () {
+        return redirect(app()->getlocale());
+    });
+
+    Route::get('/standings', 'StandingsController@index')->name('standings');
+    Route::get('/statistics', 'StatisticsController@index')->name('statistics');
+    Route::get('/transfers', 'TransfersController@index')->name('transfers');
+
+    // Route for showing welcome page.
+    Route::get('/server', function () {
+        return view('server');
+    });
 
 });
 
@@ -48,3 +79,5 @@ Route::get('/404', function () {
 Route::get('/403', function () {
     return redirect(app()->getlocale()."/403");
 });
+
+Route::get('/discord-notification', 'DiscordNotificationDemo@index')->name('discord');

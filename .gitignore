@@ -16,3 +16,7 @@ storage/uploads
 .env.production
 .env.staging
 *.Identifier
+
+public/dist/img/
+
+public/plugins/
