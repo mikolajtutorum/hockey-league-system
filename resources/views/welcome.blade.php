@@ -9,7 +9,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Dashboard</h1>
+            <h1 class="m-0">{{ __('Dashboard') }}</h1>
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -24,8 +24,8 @@
 <div class="card">
 <div class="card-header border-0">
 <div class="d-flex justify-content-between">
-<h3 class="card-title">Standings</h3>
-<a href="#">Full Standings</a>
+<h3 class="card-title">{{ __('Standings') }}</h3>
+<a href="#">{{ __('Full Standings') }}</a>
 </div>
 </div>
 <div class="card-body">

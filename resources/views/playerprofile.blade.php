@@ -77,9 +77,8 @@
 <div class="card">
 <div class="card-header p-2">
 <ul class="nav nav-pills">
-<li class="nav-item"><a class="nav-link active" href="#activity" data-toggle="tab">Players</a></li>
-<li class="nav-item"><a class="nav-link" href="#timeline" data-toggle="tab">Something</a></li>
-<li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">Something</a></li>
+<li class="nav-item"><a class="nav-link active" href="#activity" data-toggle="tab">Career History</a></li>
+<li class="nav-item"><a class="nav-link" href="#timeline" data-toggle="tab">Awards</a></li>
 </ul>
 </div>
 <div class="card-body">
@@ -90,10 +89,6 @@ one
 
 <div class="tab-pane" id="timeline">
   two
-</div>
-
-<div class="tab-pane" id="settings">
-  three
 </div>
 
 </div>

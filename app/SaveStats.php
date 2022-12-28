@@ -4,10 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Transfers extends Model
+class SaveStats extends Model
 {
-    protected $table = 'transfers';
+    protected $table = 'save_stats';
     protected $primaryKey = 'id';
-
-    protected $dates = ['time'];
 }

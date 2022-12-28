@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTransfersTable extends Migration
+class CreateSaveStatsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,13 @@ class CreateTransfersTable extends Migration
      */
     public function up()
     {
-        Schema::create('transfers', function (Blueprint $table) {
+        Schema::create('save_stats', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('season_id')->unsigned();
-            $table->bigInteger('player_id')->unsigned();
-            $table->bigInteger('old_team_id')->unsigned();
-            $table->bigInteger('new_team_id')->unsigned();
-            $table->timestamp('time');
+            $table->text('text')->nullable();
+            $table->string('guid')->nullable();
+            $table->string('time')->nullable();
+            $table->string('redname')->nullable();
+            $table->string('bluename')->nullable();
             $table->timestamps();
         });
     }
@@ -31,6 +31,6 @@ class CreateTransfersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('transfers');
+        Schema::dropIfExists('save_stats');
     }
 }

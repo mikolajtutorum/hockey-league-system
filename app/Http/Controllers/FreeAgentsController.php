@@ -2,12 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Transfers;
-use App\Teams;
-use App\Players;
+use App\FreeAgents;
 use Illuminate\Http\Request;
 
-class TransfersController extends Controller
+class FreeAgentsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,12 +15,6 @@ class TransfersController extends Controller
     public function index()
     {
         //
-
-        $transfers = Transfers::get();
-        $teams = Teams::get();
-        $players = Players::get();
-
-        return view('transfers', compact('transfers', 'teams', 'players'));
     }
 
     /**
@@ -49,10 +41,10 @@ class TransfersController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Transfers  $transfers
+     * @param  \App\FreeAgents  $freeAgents
      * @return \Illuminate\Http\Response
      */
-    public function show(Transfers $transfers)
+    public function show(FreeAgents $freeAgents)
     {
         //
     }
@@ -60,10 +52,10 @@ class TransfersController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Transfers  $transfers
+     * @param  \App\FreeAgents  $freeAgents
      * @return \Illuminate\Http\Response
      */
-    public function edit(Transfers $transfers)
+    public function edit(FreeAgents $freeAgents)
     {
         //
     }
@@ -72,10 +64,10 @@ class TransfersController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Transfers  $transfers
+     * @param  \App\FreeAgents  $freeAgents
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Transfers $transfers)
+    public function update(Request $request, FreeAgents $freeAgents)
     {
         //
     }
@@ -83,10 +75,10 @@ class TransfersController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Transfers  $transfers
+     * @param  \App\FreeAgents  $freeAgents
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Transfers $transfers)
+    public function destroy(FreeAgents $freeAgents)
     {
         //
     }

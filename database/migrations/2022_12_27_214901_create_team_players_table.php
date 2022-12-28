@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTransfersTable extends Migration
+class CreateTeamPlayersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,11 @@ class CreateTransfersTable extends Migration
      */
     public function up()
     {
-        Schema::create('transfers', function (Blueprint $table) {
+        Schema::create('team_players', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('season_id')->unsigned();
+            $table->bigInteger('team_id')->unsigned();
             $table->bigInteger('player_id')->unsigned();
-            $table->bigInteger('old_team_id')->unsigned();
-            $table->bigInteger('new_team_id')->unsigned();
-            $table->timestamp('time');
             $table->timestamps();
         });
     }
@@ -31,6 +29,6 @@ class CreateTransfersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('transfers');
+        Schema::dropIfExists('team_players');
     }
 }

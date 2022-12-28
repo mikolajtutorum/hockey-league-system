@@ -9,7 +9,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Standings</h1>
+            <h1 class="m-0">{{ __('Standings') }}</h1>
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -23,7 +23,7 @@
           <div class="col-md-12">
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Western Conference</h3>
+                <h3 class="card-title">{{ __('Western Conference') }}</h3>
               </div>
               <div class="card-body p-2">
                 <table class="table">
@@ -64,7 +64,7 @@
           <div class="col-md-12">
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Eastern Conference</h3>
+                <h3 class="card-title">{{ __('Eastern Conference') }}</h3>
               </div>
               <div class="card-body p-2">
                 <table class="table">

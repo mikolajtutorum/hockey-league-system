@@ -20,6 +20,12 @@ class CreateFixturesTable extends Migration
             $table->bigInteger('team_home')->unsigned();
             $table->bigInteger('team_away')->unsigned();
             $table->timestamp('scheduled_time');
+            $table->bigInteger('score_home')->unsigned()->nullable();
+            $table->bigInteger('score_away')->unsigned()->nullable();
+            $table->string('referee')->nullable();
+            $table->string('recording_1')->nullable();
+            $table->string('recording_2')->nullable();
+            $table->string('recording_3')->nullable();
             $table->timestamps();
         });
     }

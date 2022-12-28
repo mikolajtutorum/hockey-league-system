@@ -26,10 +26,10 @@
 <div class="card card-primary card-outline">
 <div class="card-body box-profile">
 <div class="text-center">
-<img class="profile-user-img img-fluid img-circle" src="/uploads/teams/{{ $team[0]->teamlogo }}" alt="User profile picture">
+<img class="profile-user-img img-fluid img-circle" src="/uploads/teams/{{ $team[0]->team_logo }}" alt="User profile picture">
 </div>
 <h3 class="profile-username text-center">{{ $team[0]->team_name }}</h3>
-<p class="text-muted text-center">Owned by {{ $team[0]->team_owner }}</p>
+<p class="text-muted text-center">{{ __('Owner') }}: {{ $team[0]->team_owner }}</p>
 <ul class="list-group list-group-unbordered mb-3">
 <li class="list-group-item">
 <b>A</b> <a class="float-right">-</a>
@@ -78,7 +78,7 @@
 <div class="card">
 <div class="card-header p-2">
 <ul class="nav nav-pills">
-<li class="nav-item"><a class="nav-link active" href="#activity" data-toggle="tab">Players</a></li>
+<li class="nav-item"><a class="nav-link active" href="#activity" data-toggle="tab">{{ __('Players') }}</a></li>
 <li class="nav-item"><a class="nav-link" href="#timeline" data-toggle="tab">Something</a></li>
 <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">Something</a></li>
 </ul>

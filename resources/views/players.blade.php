@@ -9,7 +9,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Players</h1>
+            <h1 class="m-0">{{ __('Players') }}</h1>
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -29,7 +29,7 @@
                   <img class="profile-user-img img-fluid img-circle" src="/uploads/players/{{ $player->player_avatar }}" alt="Player Avatar">
                 </div>
                 <h3 class="profile-username text-center">{{ $player->player_name }}</h3>
-                <a href="{{ route('playerprofile', [app()->getLocale(), $player->player_id]) }}" class="btn btn-primary btn-block"><b>Player Profile</b></a>
+                <a href="{{ route('playerprofile', [app()->getLocale(), $player->player_id]) }}" class="btn btn-primary btn-block"><b>{{ __('Player Profile') }}</b></a>
               </div>
             </div>
           </div>
